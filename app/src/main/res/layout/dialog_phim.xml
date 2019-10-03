@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/txtPhim_dialog"
+        android:gravity="center"
+        android:textColor="#931616"
+        android:textSize="24dp"
+        android:text="Phim:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+
+        android:id="@+id/btn_xoa_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Xóa Phim"
+        android:textColor="#931616"
+        app:layout_constraintTop_toBottomOf="@+id/txtPhim_dialog"
+        tools:layout_editor_absoluteX="31dp" />
+
+    <Button
+        android:id="@+id/btn_them_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="88dp"
+        android:text="Xem Thêm"
+        android:textColor="#931616"
+        app:layout_constraintLeft_toRightOf="@+id/btn_xoa_dialog"
+        app:layout_constraintTop_toBottomOf="@+id/txtPhim_dialog" />
+
+</android.support.constraint.ConstraintLayout>
